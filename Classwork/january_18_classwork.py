@@ -125,57 +125,10 @@ for number in range(start, end + 1):
 
 """
 
-# Calculating y + yy + yyy + yyyy + ... given the single digit y and a number of terms
-
-"""
-
-def sumseries(y, n):
     
-    totsum = 0
-    
-    for i in range(1, n + 1):
-        
-        totsum += y
-        
-        y = (y * 10) + 1
-        
-    return totsum
-
-y = 5
-n = 5
-
-print(sumseries(y, n))
-    
-"""
-
-# Given a string, split the string into a list of tokens at space boundaries
-# Example: 'this is cpsc 242 class', mlist = ['this', 'is', 'cpsc', '242', 'class']
 
 
 
-
-def stringsplit(mstr):
-    
-    splitwords = []
-    tempstring = ''
-    
-    for word in mstr:
-    
-        if word == ' ':
-        
-            splitwords += [tempstring]
-        
-            tempstring = ''
-
-        else:
-        
-            tempstring += word
-        
-    return splitwords
-
-mstr = 'this is cpsc 242 class'
-
-print(stringsplit(mstr))
 
 
         
